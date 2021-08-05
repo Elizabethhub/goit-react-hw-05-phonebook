@@ -18,13 +18,13 @@ const ContactList = ({ contacts, filter, onDeleteContact }) => {
 
 ContactList.propTypes = {
   contacts: PropTypes.array.isRequired,
-  filter: PropTypes.string.isRequired,
+  filter: PropTypes.string,
   onDeleteContact: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => ({
-  contacts: state.contacts,
-  filter: state.filter,
+  contacts: state.contacts.items,
+  filter: state.contacts.filter,
 });
 
 export default connect(mapStateToProps, { onDeleteContact: deleteContact })(ContactList);

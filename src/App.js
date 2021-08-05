@@ -3,7 +3,6 @@ import ContactForm from "./components/contactForm/ContactForm";
 import ContactList from "./components/contactList/ContactList";
 import Filter from "./components/filter/Filter";
 import Section from "./components/section/Section";
-import { addContact } from "./redux/contacts/contactActions";
 
 const App = () => {
   return (

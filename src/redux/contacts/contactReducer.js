@@ -12,7 +12,7 @@ const filterReducer = createReducer("", {
 });
 
 const contactReducer = combineReducers({
-  contacts: contactItemReducer,
+  items: contactItemReducer,
   filter: filterReducer,
 });
 

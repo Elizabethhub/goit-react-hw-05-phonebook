@@ -21,10 +21,6 @@ const Filter = ({ setFilter, filter }) => {
   );
 };
 
-Filter.propTypes = {
-  handleInputChange: PropTypes.func,
-};
-
 const mapStateToProps = (state) => ({
   filter: state.filter,
 });
@@ -38,3 +34,8 @@ const mapDispatchToProps = {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Filter);
+
+Filter.propTypes = {
+  filter: PropTypes.string,
+  setFilter: PropTypes.func.isRequired,
+};
